@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name kicad-sky130)(type Legacy)(uri ${KIPRJMOD}/kicad-sky130.lib)(options "")(descr ""))
+  (lib (name pspice)(type Legacy)(uri ${KICAD_SYMBOL_DIR}/pspice.lib)(options "")(descr ""))
+)
