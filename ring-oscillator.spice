@@ -1,0 +1,15 @@
+.title KiCad schematic
+.include "/home/andrew/pdks/sky130A/libs.tech/ngspice/corners/tt.spice"
+Vpwr1 Vdd 0 1.8
+XM1 Net-_M1-Pad1_ X 0 0 sky130_fd_pr__nfet_01v8 l=1 w=1
+XM2 Net-_M1-Pad1_ X Vdd Vdd sky130_fd_pr__pfet_01v8 l=1 w=1
+XM3 Net-_M3-Pad1_ Net-_M1-Pad1_ 0 0 sky130_fd_pr__nfet_01v8 l=1 w=1
+XM4 Net-_M3-Pad1_ Net-_M1-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8 l=1 w=1
+XM6 Net-_M5-Pad1_ Net-_M3-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8 l=1 w=1
+XM5 Net-_M5-Pad1_ Net-_M3-Pad1_ 0 0 sky130_fd_pr__nfet_01v8 l=1 w=1
+XM8 Net-_M10-Pad2_ Net-_M5-Pad1_ Vdd Vdd sky130_fd_pr__pfet_01v8 l=1 w=1
+XM7 Net-_M10-Pad2_ Net-_M5-Pad1_ 0 0 sky130_fd_pr__nfet_01v8 l=1 w=1
+XM10 X Net-_M10-Pad2_ Vdd Vdd sky130_fd_pr__pfet_01v8 l=1 w=1
+XM9 X Net-_M10-Pad2_ 0 0 sky130_fd_pr__nfet_01v8 l=1 w=1
+.tran 1p 100n 
+.end
