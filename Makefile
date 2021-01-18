@@ -25,3 +25,7 @@ lvs: $(STRIPPED_NL) $(EXTRACTED_NL)
 .INTERMEDIATE: $(STRIPPED_NL)
 $(STRIPPED_NL): $(NL)
 	sed -e '/^\.include/d' -e '/^V/d' $< > $@
+
+.PHONY: edit-layout
+edit-layout:
+	magic -rcfile $(MAGICRC) $(DESIGN) -d cairo
