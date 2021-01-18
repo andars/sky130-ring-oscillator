@@ -1,0 +1,17 @@
+* NGSPICE file created from ring-oscillator.ext - technology: sky130A
+
+
+* Top level circuit ring-oscillator
+
+X0 a_3854_526# a_2932_526# Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X1 a_1104_530# X5 GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X2 a_2020_528# a_1104_530# GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X3 X5 a_3854_526# Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X4 a_2932_526# a_2020_528# Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X5 a_3854_526# a_2932_526# GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X6 X5 a_3854_526# GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X7 a_2932_526# a_2020_528# GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X8 a_2020_528# a_1104_530# Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X9 a_1104_530# X5 Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+.end
+
