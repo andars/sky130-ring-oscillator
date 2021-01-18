@@ -1,0 +1,41 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Subcircuit summary:
+Circuit 1: ring-oscillator-stripped.spice  |Circuit 2: ring-oscillator-ext.spice       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (5)                |sky130_fd_pr__nfet_01v8 (5)                
+sky130_fd_pr__pfet_01v8 (5)                |sky130_fd_pr__pfet_01v8 (5)                
+Number of devices: 10                      |Number of devices: 10                      
+Number of nets: 7                          |Number of nets: 7                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 3 symmetries.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__pfet_01v8M10 vs. sky130_fd_pr__pfet_01v89:
+ w circuit1: 1   circuit2: 0.84   (delta=17.4%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M8 vs. sky130_fd_pr__pfet_01v83:
+ w circuit1: 1   circuit2: 0.84   (delta=17.4%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M6 vs. sky130_fd_pr__pfet_01v80:
+ w circuit1: 1   circuit2: 0.84   (delta=17.4%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M4 vs. sky130_fd_pr__pfet_01v84:
+ w circuit1: 1   circuit2: 0.84   (delta=17.4%, cutoff=1%)
+sky130_fd_pr__pfet_01v8M2 vs. sky130_fd_pr__pfet_01v88:
+ w circuit1: 1   circuit2: 0.84   (delta=17.4%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M9 vs. sky130_fd_pr__nfet_01v81:
+ w circuit1: 1   circuit2: 0.99   (delta=1.01%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M7 vs. sky130_fd_pr__nfet_01v86:
+ w circuit1: 1   circuit2: 0.99   (delta=1.01%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M5 vs. sky130_fd_pr__nfet_01v85:
+ w circuit1: 1   circuit2: 0.99   (delta=1.01%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M3 vs. sky130_fd_pr__nfet_01v87:
+ w circuit1: 1   circuit2: 0.99   (delta=1.01%, cutoff=1%)
+sky130_fd_pr__nfet_01v8M1 vs. sky130_fd_pr__nfet_01v82:
+ w circuit1: 1   circuit2: 0.99   (delta=1.01%, cutoff=1%)
+Cells have no pins;  pin matching not needed.
+Device classes ring-oscillator-stripped.spice and ring-oscillator-ext.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors: ring-oscillator-stripped.spice

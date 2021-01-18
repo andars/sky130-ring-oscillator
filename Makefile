@@ -20,7 +20,7 @@ $(EXTRACTED_NL): $(DESIGN).mag
 
 .PHONY: lvs
 lvs: $(STRIPPED_NL) $(EXTRACTED_NL)
-	netgen -batch lvs $^ $(NETGEN_SETUP) comp.out -full
+	netgen -batch lvs $^ $(NETGEN_SETUP) logs/comp.out -full
 
 .INTERMEDIATE: $(STRIPPED_NL)
 $(STRIPPED_NL): $(NL)
