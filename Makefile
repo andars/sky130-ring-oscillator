@@ -7,6 +7,7 @@ DESIGN=ring-oscillator
 NL=$(DESIGN).spice
 STRIPPED_NL=$(DESIGN)-stripped.spice
 EXTRACTED_NL=$(DESIGN)-ext.spice
+PEX_NL=$(DESIGN)-pex.spice
 
 .PHONY: extract
 extract: $(EXTRACTED_NL)
@@ -25,6 +26,16 @@ lvs: $(STRIPPED_NL) $(EXTRACTED_NL)
 .INTERMEDIATE: $(STRIPPED_NL)
 $(STRIPPED_NL): $(NL)
 	sed -e '/^\.include/d' -e '/^V/d' $< > $@
+
+.PHONY: pex
+pex: $(PEX_NL)
+
+$(PEX_NL): $(DESIGN).mag
+	magic \
+	  -rcfile $(MAGICRC) \
+	  -dnull -noconsole \
+	  mag_to_spice_pex.tcl \
+	  < /dev/null
 
 .PHONY: edit-layout
 edit-layout:
