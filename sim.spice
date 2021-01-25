@@ -1,0 +1,15 @@
+*simulation deck
+.include ring-oscillator.spice
+
+.control
+run
+hardcopy logs/transient.ps x
+
+linearize x
+fft x
+let buf=db(mag(x))
+meas sp fft_max MAX_AT buf from=0.01G to=1.0G
+
+hardcopy logs/spectrum.ps buf xlimit 0.01G 1.0G
+.endc
+

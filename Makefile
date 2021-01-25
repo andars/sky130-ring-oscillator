@@ -30,6 +30,12 @@ $(STRIPPED_NL): $(NL)
 .PHONY: pex
 pex: $(PEX_NL)
 
+.PHONY: sim
+sim:
+	ngspice -b sim.spice | tee logs/sim.log
+	ps2pdf logs/transient.ps logs/transient.pdf
+	ps2pdf logs/spectrum.ps logs/spectrum.pdf
+
 $(PEX_NL): $(DESIGN).mag
 	magic \
 	  -rcfile $(MAGICRC) \
