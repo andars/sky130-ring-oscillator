@@ -1,0 +1,31 @@
+
+Circuit: *simulation deck
+
+Scale set
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+sky130_fd_pr__esd_nfet_05v0_nvt.pm3               0
+                                             0
+vdd                                        1.8
+net-_m1-pad1_                         0.678799
+x                                     0.678799
+net-_m3-pad1_                         0.678799
+net-_m5-pad1_                         0.678799
+net-_m10-pad2_                        0.678799
+vpwr1#branch                      -6.32762e-06
+
+
+No. of Data Rows : 100008
+
+The file "logs/transient.ps" may be printed on a postscript printer.
+FFT: Time span: 1e-07 s, input length: 100001, zero padding: 31071
+FFT: Frequency resolution: 1e+07 Hz, output length: 65537
+fft_max             =  1.831073e+08 with=  -1.878181e+00
+
+The file "logs/spectrum.ps" may be printed on a postscript printer.
