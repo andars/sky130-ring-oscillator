@@ -1,0 +1,20 @@
+*post-layout simulation deck
+.include ring-oscillator-pex.spice
+
+Vpwr1 Vdd 0 1.8
+.tran 1p 100n
+.include "/home/andrew/pdks/sky130A/libs.tech/ngspice/corners/tt.spice"
+
+.control
+run
+hardcopy logs/pl-transient.ps node_5
+
+linearize node_5
+fft node_5
+let buf=db(mag(node_5))
+meas sp fft_max MAX_AT buf from=0.01G to=1.0G
+
+hardcopy logs/pl-spectrum.ps buf xlimit 0.01G 1.0G
+.endc
+
+

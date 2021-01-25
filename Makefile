@@ -36,6 +36,12 @@ sim:
 	ps2pdf logs/transient.ps logs/transient.pdf
 	ps2pdf logs/spectrum.ps logs/spectrum.pdf
 
+.PHONY: plsim
+plsim:
+	ngspice -b plsim.spice | tee logs/plsim.log
+	ps2pdf logs/pl-transient.ps logs/pl-transient.pdf
+	ps2pdf logs/pl-spectrum.ps logs/pl-spectrum.pdf
+
 $(PEX_NL): $(DESIGN).mag
 	magic \
 	  -rcfile $(MAGICRC) \
