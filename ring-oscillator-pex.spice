@@ -1,0 +1,35 @@
+* NGSPICE file created from ring-oscillator.ext - technology: sky130A
+
+
+* Top level circuit ring-oscillator
+
+X0 node_4 node_3 Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X1 node_1 node_5 GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X2 node_2 node_1 GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X3 node_5 node_4 Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X4 node_3 node_2 Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X5 node_4 node_3 GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X6 node_5 node_4 GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X7 node_3 node_2 GND GND sky130_fd_pr__nfet_01v8 w=990000u l=1.01e+06u
+X8 node_2 node_1 Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+X9 node_1 node_5 Vdd Vdd sky130_fd_pr__pfet_01v8 w=840000u l=1.01e+06u
+C0 node_2 node_5 1.20fF
+C1 node_4 node_5 1.27fF
+C2 node_2 node_1 0.07fF
+C3 node_1 node_5 1.24fF
+C4 node_2 Vdd 0.24fF
+C5 Vdd node_5 2.42fF
+C6 node_4 Vdd 0.24fF
+C7 node_1 Vdd 0.25fF
+C8 node_2 node_3 0.06fF
+C9 node_3 node_5 1.14fF
+C10 node_4 node_3 0.06fF
+C11 node_3 Vdd 0.24fF
+C12 node_4 GND 1.06fF
+C13 node_3 GND 1.14fF
+C14 node_2 GND 1.10fF
+C15 node_1 GND 0.15fF
+C16 node_5 GND 0.36fF
+C17 Vdd GND 17.09fF
+.end
+
